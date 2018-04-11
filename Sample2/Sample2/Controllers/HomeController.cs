@@ -10,7 +10,8 @@ namespace Sample2.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Pageadasd";
+            ViewBag.Title = "Home Page";
+            ViewBag.Name = "Surin";
 
             return View();
         }
