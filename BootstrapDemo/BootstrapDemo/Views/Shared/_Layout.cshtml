@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="~/Jquery/jquery.lineProgressbar.js"></script>
+    <script src="~/Jquery/wow.min.js"></script>
+    <link href="~/Styles/animate.min.css" rel="stylesheet" />
+    <link href="~/Styles/jquery.lineProgressbar.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="~/Styles/style.css" rel="stylesheet" />
+
+    <style>
+        .percentCount {
+            color:#fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Menu and Logo-->
+<nav class="navbar navbar-nav navbar-default navbar-fixed-top navbar-custom">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#robust">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"> 
+                       Company Name
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-8">
+                <div class="collapse navbar-collapse" id="robust">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact US</a></li>
+                        <li><a href="#">About US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<!--Slider-->
+    <div class="slider">
+        <div id="slider1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slider1" data-slide-to="0" class="active"></li>
+                <li data-target="#slider1" data-slide-to="1"></li>
+                <li data-target="#slider1" data-slide-to="2"></li>
+                <li data-target="#slider1" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="~/Images/slider1.jpg" alt="image missing" class="img-responsive" style="height:500px"; />  
+                    <div class="carousel-caption wow swing" data-wow-duration="3s">
+                        <b>This is  1st Slider</b>
+                    </div>                  
+                </div>
+                <div class="item">
+                    <img src="https://i.imgur.com/JD4Caxa.jpg" alt="image missing" class="img-responsive" style="height:500px;" /> 
+                    <div class="carousel-caption wow bounceInRight" data-wow-duration="5s">
+                        <b>This is  2nd Slider</b>
+                    </div>                     
+                </div>
+                <div class="item">
+                    <img src="~/Images/slider3.jpg" alt="image missing" class="img-responsive" style="height:500px;"/>  
+                    <div class="carousel-caption wow bounceInDown" data-wow-duration="3s">
+                        <b>This is  3rd Slider</b>
+                    </div>                    
+                </div>
+                <div class="item">
+                    <img src="~/Images/slider4.jpg" alt="image missing" class="img-responsive" style="height:500px;"/>  
+                    <div class="carousel-caption wow bounceInLeft" data-wow-duration="3s">
+                        <b>This is  4th Slider</b>
+                    </div>                    
+                </div>
+            </div> 
+            <a href="#slider1" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+             <a href="#slider1" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <!--Services-->
+    <div class="container">
+        <center><strong id="services">Services</strong></center> <br />
+        <center><p style="font-size:24px;">Bootstrap is a free and open-source front-end library for designing websites and web applications.<br /> It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.</p></center>
+    <br /><br /><br />
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="col1 wow fadeInLeft" data-wow-duration="4.5s">
+                <center>
+                    <div class="icons"><i class="fa fa-laptop"></i>
+                    </div>
+                    <strong style="font-size:22px;">Web Design</strong>
+                    <p style="font-size:17px; margin-top:20px;">Bootstrap is a free and open-source front-end library for designing websites and web applications.<br /> It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.</p>
+                    <br />
+                    <a href="#" class="btn btn-primary" style="margin-bottom:14px;">Read More</a>
+                </center>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="col1  wow fadeInLeft" data-wow-duration="4s"">
+                <center>
+                    <div class="icons"><i class="fa fa-mobile"></i>
+                    </div>
+                    <strong style="font-size:22px;">Mobile Development</strong>
+                    <p style="font-size:17px; margin-top:20px;">Bootstrap is a free and open-source front-end library for designing websites and web applications.<br /> It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.</p>
+                    <br />
+                    <a href="#" class="btn btn-primary" style="margin-bottom:14px;">Read More</a>
+                </center>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="col1  wow fadeInLeft" data-wow-duration="3.5s"">
+                <center>
+                    <div class="icons"><i class="fa fa-cogs"></i>
+                    </div>
+                    <strong style="font-size:22px;">Software Development</strong>
+                    <p style="font-size:17px; margin-top:20px;">Bootstrap is a free and open-source front-end library for designing websites and web applications.<br /> It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.</p>
+                    <br />
+                    <a href="#" class="btn btn-primary" style="margin-bottom:14px;">Read More</a>
+                </center>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="col1  wow fadeInLeft" data-wow-duration="3s"">
+                <center>
+                    <div class="icons"><i class="fa fa-signal"></i>
+                    </div>
+                    <strong style="font-size:22px;">SEO</strong>
+                    <p style="font-size:17px; margin-top:20px;">Bootstrap is a free and open-source front-end library for designing websites and web applications.<br /> It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.</p>
+                    <br />
+                    <a href="#" class="btn btn-primary" style="margin-bottom:14px;">Read More</a>
+                </center>
+            </div>
+        </div>
+    </div>
+        </div>
+    <div id="about">
+        <div class="container">
+    <center><strong id="aboutCompany">Technology</strong></center><br /><br />
+        <div class="row">
+            <div class="col-md-6">
+               <img src="/Images/project.jpg" alt="missing" class="img-responsive" style="height:430px;" />
+            </div>
+            <div class="col-md-6">
+                
+                <p style="color:white;">Bootstrap is a free and open-source front-end library for designing websites and web applications.<br /> It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.</p>
+                <h4 style="color:#fff;">React JS</h4>
+                <div id="react"></div>
+                <h4 style="color:#fff;">Bootstrap</h4>
+                <div id="bootstrap"></div>
+                <h4 style="color:#fff;">WebApi</h4>
+                <div id="webApi"></div>
+                <h4 style="color:#fff;">DotnetCore</h4>
+                <div id="dotnetCore"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--Our Team-->
+    <div id="team">
+        <div class="container">
+            <div class="row">
+                <center><strong id="ourTeam">Our Team</strong></center> <br /><br />
+                 <div class="col-md-3">
+                    <div class="team-member  wow fadeInLeft" data-wow-duration="2s"">
+                        <img src="/Images/Munne.png" class="img-responsive img-circle" style="height:238px;" />
+                        <h3>Munneswar</h3>
+                        <strong>Dotnet Developer</strong>
+                        <p>Over 4 years Experience in dotnet Technologies currently working in Rapid Value as  s/w Engineer</p>
+                            <a href="https://www.facebook.com" class="icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="icon"><i class="fa fa-google-plus"></i></a>                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member  wow fadeInLeft" data-wow-duration="3.5s"">
+                        <img src="/Images/Imran.jpg" class="img-responsive img-circle" style="height:238px;border:2px solid rgb(200, 185, 61);" />
+                        <h3>Imran</h3>
+                        <strong>Dotnet Developer</strong>
+                        <p>Over 7 years Experience in dotnet Technologies currently working in Rapid Value as  s/w Engineer</p>
+                            <a href="https://www.facebook.com" class="icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="icon"><i class="fa fa-google-plus"></i></a>
+                        
+                    </div>
+                </div>
+                 <div class="col-md-3">
+                    <div class="team-member  wow fadeInLeft" data-wow-duration="4s"">
+                        <img src="/Images/nisha.png" class="img-responsive img-circle" style="height:238px;border:2px solid rgb(200, 185, 61);" />
+                        <h3>Nisha</h3>
+                        <strong>Dotnet Developer</strong>
+                        <p>Over 3 years Experience in dotnet Technologies currently working in Rapid Value as  s/w Engineer</p>
+                            <a href="https://www.facebook.com" class="icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="icon"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member  wow fadeInLeft" data-wow-duration="3s"">
+                        <img src="/Images/balaji.png" class="img-responsive " style="height:238px;" />
+                        <h3>Balaji..</h3>
+                        <strong>Dotnet Developer</strong>
+                        <p>Over: 6+ years experience in Software testing both Automation and Manual testing . </p>
+                            <a href="https://www.facebook.com" class="icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="icon"><i class="fa fa-google-plus"></i></a>
+                       
+                    </div>
+                </div>
+                
+                 
+                
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <br />
+                    <h2 style="color:#fff;">About US</h2>
+                    <p style="color:#fff;">Some Text Some TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome Text</p>
+                </div>
+                <div class="col-md-4">
+                    <br />
+                    <h2 style="color:#fff;">Services</h2>
+                    <p style="color:#fff;">Some Text Some TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome Text</p>
+                </div>
+                <div class="col-md-4" style="color:#fff;">
+                    <br />
+                    <h2 style="color:#fff;">Contact Us</h2>
+                    <p style="color:#fff;">Some Text Some TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome Text</p>
+                    <span class="glyphicon glyphicon-envelope"></span>&nbsp;surinpanda@gmail.com ,
+                    <span class="glyphicon glyphicon-earphone"></span>+91-9986430032
+                </div>
+            </div>
+        </div>
+        <div class="container" style="color:#fff;">
+            <center><h3>&copy;Surin Panda</h3></center>
+        </div>
+       
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#react').LineProgressbar({
+                percentage: 45,
+                fillBackgroundColor: 'green',
+                height: '25px'
+            });
+            $('#bootstrap').LineProgressbar({
+                percentage: 99,
+                fillBackgroundColor: 'blue',
+                height: '25px'
+            });
+            $('#webApi').LineProgressbar({
+                percentage: 76,
+                fillBackgroundColor: 'red',
+                height: '25px'
+            });
+            $('#dotnetCore').LineProgressbar({
+                percentage: 84,
+                fillBackgroundColor: 'gray',
+                height: '25px'
+            });
+        });
+    </script>
+     <script src="Jquery/wow.min.js"></script>
+              <script>
+                  new WOW().init();
+              </script>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
